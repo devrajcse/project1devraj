@@ -1,0 +1,14 @@
+body
+{
+    background: #ffffff;  
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+.h1class
+{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}

@@ -1,0 +1,100 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-size: 8px;
+/* height: 1000px; */
+}
+.banner
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.banner .content
+{
+    position: relative;
+    z-index: 1;
+    max-width: 10000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.banner .content h1
+{
+    
+margin: 0;
+padding: 0;
+font-size: 4.5em;
+text-transform: uppercase;
+color:#fff200;
+
+}
+.banner .content p
+{
+  font-family: 'Dancing Script', cursive;
+    /* font-family: 'Otomanopee One', sans-serif; */
+font-weight: 700;
+font-size: 6em;
+color: white;
+}
+.controls
+{
+    width: 85px;
+    padding-left: 0px;
+    height: 30px;
+   
+}
+ { 
+    /* font-size: 80px; */
+    color: #fff;
+    text-align: center;
+     -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate; 
+     animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 1px #fff, 0 0 2px rgb(116, 53, 53), 0 0 3px #2ee600, 0 0 4px #41e600, 0 0 5px #49e600, 0 0 6px #5ce600, 0 0 7px #41e600;
+    }
+    to {
+      text-shadow: 0 0 2px #fff, 0 0 1px #a3ff4d, 0 0 1px #9dff4d, 0 0 2px #71ff4d, 0 0 3px #71ff4d, 0 0 20px #85ff4d, 0 0 40px #5cff4d;
+    }
+  }
+
+  .homebtn
+{
+    /* margin-bottom: 0px; */
+    /* margin-left: 0px; */
+    margin: 0px 20px 0px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    padding: .25rem 3rem;
+    border-radius: 2.75rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+
+    /* border: 2px solid black; */
+    background-image: linear-gradient(270deg, rgba(0, 174, 255, 0.911) 20%,  rgba(94, 255, 0, 0.911) 100%);
+    /* box-shadow:  1rem 0; */
+}
+.homebtn a{
+  text-decoration: none;
+}
+  

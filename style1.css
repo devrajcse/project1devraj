@@ -1,0 +1,180 @@
+*{
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header
+{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(login11.jpg);
+    /* filter: blur(2px); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(6, 46, 105, .2);
+    color: chartreuse; display: flex;justify-content: space-between;
+    align-items: center;
+}
+nav .logo
+{
+    width: 20%;text-align: center;
+
+    /* display: inline-block; */
+    margin: 0 0.5rem;
+
+    animation: bounce infinite;
+    animation-duration: 4s; /* don't forget to set a duration! */
+
+}
+nav .menu
+{   width: 400px;
+     margin: 20px 20px;
+    display: flex;
+    justify-content:center;
+}
+nav .menu a
+{
+    width: 25%;
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+}
+main
+{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section h3
+{
+    font-family: 'Lobster', cursive;
+    font-size: 350%;
+    font-weight: bold;
+    text-shadow: 1px 10px 50px black;
+    letter-spacing: 3px;
+    color: white;
+}
+section h1
+{
+    margin: 30px 0px 20px 0px;
+    font-size: 250%;
+    font-weight: bold;
+    text-shadow: 1px 10px 50px black;
+    letter-spacing: 3px;
+    color: white;
+}
+section p
+{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a
+{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: cyan;
+    transition: all .8s ease;
+}
+section .btn1
+{
+    background: #fff;
+    color: rgb(13, 34, 228);
+}
+.btn1:hover
+{
+    background: #07cca5;
+    color: white;
+}
+/* section .btn2
+{
+background: #07cca5;
+color: white;
+}
+.btn2:hover
+{
+    background: #fff;
+color: rgb(13, 34, 228);
+} */
+
+.change_content:after
+{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #35f5e5;
+}
+@keyframes changetext
+{
+    0%{content: "Darjeeling";}
+    20%{content: "Mumbai";}
+    35%{content: "Agra";}
+    80%{content: "Kolkata";}
+    100%{content: "Amritsar";}
+}
+/* .change_content {
+
+   color: #fff;
+   text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+     -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+ }
+
+ @-webkit-keyframes glow {
+   from {
+     text-shadow: 0 0 0px #fff, 0 0 1px rgb(53, 116, 5), 0 0 3px #2ee600, 0 0 4px #41e600, 0 0 5px #49e600, 0 0 0px #5ce600, 0 0 0px #41e600;
+   }
+   to {
+     text-shadow: 0 0 1px #fff, 0 0 1px #a3ff4d, 0 0 0.01px #9dff4d, 0 0 0px #71ff4d, 0 0 0px #71ff4d, 0 0 2px #85ff4d, 0 0 0px #5cff4d;
+   }
+ }  */
+
+/* .btnhover:hover ::before
+{
+    transition: all;
+} */
+.btnhover:hover
+{
+    /* transform: translateY(0) scale(1.1); */
+    cursor: pointer;
+    /* transform: scale(1.7); */
+    font-size: 25px;
+    width: 85px;
+    color: yellow;
+    transition: 0.7s;
+    overflow: no-display;
+
+}
+.btnhover
+{
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+.btnhover::before
+{
+    content: "    ";
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+k{
+    opacity: 0;
+}
